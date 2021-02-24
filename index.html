@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+  <h1>My Media Player</h1>
+  <h5>Upload saved video</h5>
+  <input type="file" id="myFile">
+  
+
+  <div class="player">
+    <video class="player__video viewer" src="652333414.mp4" muted="muted"></video>
+
+    <div class="player__controls">
+      <div class="progress">
+       <div class="progress__filled"></div>
+      </div>
+      <button class="player__button toggle" title="Toggle Play">►</button>
+      <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+      <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+      <button data-skip="-10" class="player__button">« 10s</button>
+      <button data-skip="25" class="player__button">25s »</button>
+      <button class="player__button fullscreen" title="Toggle Fullscreen">F</button>
+    </div>
+    
+    
+  </div>
+  <h3>Voice Command List:</h3>
+  <div class="voice_legend">
+  
+    <ul>
+      <li>Play Video</li>
+      <li>Stop Video</li>
+      <li>Skip Ahead</li>
+      <li>Skip Back</li>
+      <li>Turn it up</li>
+      <li>Turn it down</li>
+      <li>Max Volume</li>
+      <br></br>
+      <li>Mute</li>
+      <li>Make it gray</li>
+      <li>Make it sepia</li>
+      <li>Make it saturated</li>
+      <li>Make it blurry</li>
+      <li>Clear</li>
+    </ul>
+    
+  </div>
+    <button class="grayscale-btn" title="Toggle grayscale">Make it gray!</button>
+    <button class="sepia-btn" title="Toggle sepia">Make it sepia!</button>
+    <button class="saturate-btn" title="Toggle saturate">Make it saturated!</button>
+    <button class="blur-btn" title="Toggle blur">Make it blurry!</button>
+
+<!-- End of Video Player -->
+
+<!-- Begin Voice Recognition Viewer -->
+<div class="words" contenteditable>
+</div>
+<!-- End Voice Viewer -->
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+<!-- ? -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get User Media Code Along!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- <div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+      <div class="rgb">
+        <label for="rmin">Red Min:</label>
+        <input type="range" min=0 max=255 name="rmin">
+        <label for="rmax">Red Max:</label>
+        <input type="range" min=0 max=255 name="rmax">
+
+        <br>
+
+        <label for="gmin">Green Min:</label>
+        <input type="range" min=0 max=255 name="gmin">
+        <label for="gmax">Green Max:</label>
+        <input type="range" min=0 max=255 name="gmax">
+
+        <br>
+
+        <label for="bmin">Blue Min:</label>
+        <input type="range" min=0 max=255 name="bmin">
+        <label for="bmax">Blue Max:</label>
+        <input type="range" min=0 max=255 name="bmax">
+      </div>
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+
+  <audio class="snap" src="./snap.mp3" hidden></audio>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html> -->
